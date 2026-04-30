@@ -1,0 +1,10 @@
+# VS Code ρυθμίσεις
+.vscode/
+
+# Αρχεία συστήματος
+.DS_Store
+Thumbs.db
+
+# Προσωρινά αρχεία και Logs
+*.log
+node_modules/

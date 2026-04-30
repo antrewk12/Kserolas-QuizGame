@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg,rgb(58, 57, 112) 0%, rgba(0, 49, 83, 1) 100%);
+    font-family: "Montserrat", sans-serif; 
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    font-family: "oi";
+    text-shadow: 5px 5px 5px black;
+    font-weight: 400;
+}
+#window {
+    padding: 5rem;
+    box-shadow: inset 3px -3px 3px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    background:  linear-gradient(0deg,rgb(128, 134, 153) 0%, rgb(79, 104, 179));
+}
+
+
+.quiz-box {
+    background-color: rgba(255, 255, 255, 0.6); 
+    max-width: 40rem;
+    padding: 2rem;
+    border-radius: 2rem; 
+    box-shadow: 0 8px 15px rgba(0,0,0,0.5); 
+    text-align: center;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+button {
+    padding: 1rem 1.5rem;
+    margin: 8px;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(0, 49, 83, 0.3);
+    color: black
+}
+
+#categoryButtonElement {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.answer-button {
+    display: block;
+    width: 100%;
+    background-color: blanchedalmond;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.answer-button.correct {
+
+    background-color: #2ecc71;
+    font-weight: bold;
+
+}
+
+.answer-button.wrong {
+    background-color: #e74c3c;
+    font-weight: bold;
+}
+
+.quiz {
+    display: none;
+}
+.time {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #333;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+
+}
+
+.time svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+
+}
+.time svg circle {
+    fill: none;
+    stroke: #191919;
+    stroke-width: 4;
+
+}
+.time svg circle:nth-child(2) {
+    stroke: #00ffff;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 0;
+
+}
+#categories { 
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40rem;
+    justify-content: center;
+    margin: 0 auto;
+
+}
